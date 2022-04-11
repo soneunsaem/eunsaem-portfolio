@@ -157,16 +157,6 @@ h4 {
 }
 
 /* about */
-.about-menu-circle {
-    width: 47px;
-    height: 47px;
-    border-radius: 47px;
-    background: #EF51A5;
-    position: absolute;
-    top: 28px;
-    left: 645px;
-}
-
 #about .profile {
     width: 617px;
     height: 617px;
@@ -275,16 +265,6 @@ h4 {
 
 /* skills */
 
-.skills-menu-circle {
-    width: 47px;
-    height: 47px;
-    border-radius: 47px;
-    background: #EF51A5;
-    position: absolute;
-    top: 28px;
-    left: 875px;
-}
-
 #skills-contants {
     display: flex;
     flex-flow: row;
@@ -368,16 +348,6 @@ h4 {
 
 /* 포트폴리오-메인 */
 
-.portfolio-home-menu-circle {
-    width: 47px;
-    height: 47px;
-    border-radius: 47px;
-    background: #EF51A5;
-    position: absolute;
-    top: 28px;
-    left: 1105px;
-}
-
 #portfolio-menu {
     display: flex;
     flex-flow: row;
@@ -428,16 +398,6 @@ h4 {
 }
 
 /* contact */
-
-.contact-menu-circle {
-    width: 47px;
-    height: 47px;
-    border-radius: 47px;
-    background: #EF51A5;
-    position: absolute;
-    top: 28px;
-    left: 1390px;
-}
 
 #contact {
     position: relative;
@@ -510,10 +470,6 @@ h4 {
     position: fixed;
     z-index: 1;
     width: 100vw;
-}
-
-#portfolio-web .portfolio-home-menu-circle {
-    z-index: 10;
 }
 
 #portfolio-web #menu {
