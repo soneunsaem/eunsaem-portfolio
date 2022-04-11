@@ -1,0 +1,1263 @@
+/* pc.css */
+
+.mobile-only {
+    display: none;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+#main-header {
+    background-color: #FBE45B;
+    height: 98px;
+    width: 100vw;
+}
+
+#main-header .main-header-bar {
+    height: 98px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    line-height: 45px;
+}
+
+li {
+    margin-left: 150px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+/* home */
+
+#main {
+    height: 100vh;
+    position: relative;
+}
+
+#main #title {
+    /* border: 2px solid #333; */
+    height: calc(100vh - 130px);
+}
+
+#main .circle1 {
+    width: 191px;
+    height: 191px;
+    background-color: #fff;
+    border-radius: 191px;
+    position: absolute;
+    left: 450px;
+    top: 250px;
+}
+
+#main .circle2 {
+    position: absolute;
+    width: 191px;
+    height: 191px;
+    border-radius: 191px;
+    background-color: #EF51A5;
+    right: 480px;
+    bottom: 280px;
+}
+
+#main .circle3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #fff;
+    right: 430px;
+    bottom: 270px;
+}
+
+#main #title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main #title .main-title .main-title-text {
+    font-size: 70px;
+    font-weight: 700;
+    color: #E44D9E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 2.5px #E3D7E2;
+    text-align: center;
+    line-height: 110px;
+    position: relative;
+}
+
+#main #title .main-title span {
+    color: #512B52;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 2.5px #E3D7E2;
+}
+
+/* 풋터 */
+
+#main-footer {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* 서브페이지 제목 */
+
+.sub-title {
+    width: 191px;
+    height: 191px;
+    border-radius: 191px;
+    background-color: #CC1273;
+    position: relative;
+    top: 100px;
+    left: 64px;
+}
+
+.sub-title h3 {
+    height: 191px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sub2-title {
+    margin-bottom: 30px;
+    color: #CC1273;
+}
+
+/* about */
+.about-menu-circle {
+    width: 47px;
+    height: 47px;
+    border-radius: 47px;
+    background: #EF51A5;
+    position: absolute;
+    top: 28px;
+    left: 645px;
+
+}
+
+#about .profile {
+    width: 617px;
+    height: 617px;
+    border-radius: 617px;
+    background-color: #FFD4D4;
+    margin-left: 70px;
+}
+
+#about .profile .profile-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 617px;
+    height: 617px;
+}
+
+#about .profile .profile-info .img {
+    width: 220px;
+    height: 280px;
+    background-color: #fff;
+    border: 5px solid #EF51A5;
+    border-radius: 43px;
+    margin-right: 29px;
+    background-image: url(../images/eunsaem-main.jpg);
+    background-size: cover;
+}
+
+#about .profile .profile-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#about .profile .profile-group p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1B000E;
+    margin-bottom: 15px;
+}
+
+#about .profile .profile-group p span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #450527;
+}
+
+#about .license {
+    width: 391px;
+    height: 391px;
+    border-radius: 391px;
+    background-color: #FFFEF1;
+    position: absolute;
+    top: 200px;
+    left: 915px;
+}
+
+#about .license .license-text {
+    width: 391px;
+    height: 391px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .license .license-text .license-list p {
+    margin-bottom: 10px;
+    color: #EF51A5;
+    font-weight: 500;
+}
+
+#about .license .license-text .license-list p span {
+    margin-left: 15px;
+}
+
+#about .experience {
+    width: 471px;
+    height: 471px;
+    border-radius: 471px;
+    background-color: #FFFEF1;
+    position: absolute;
+    top: 440px;
+    left: 1240px;
+}
+
+#about .experience .experience-text {
+    width: 471px;
+    height: 471px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .experience .experience-text .experience-list p {
+    margin-bottom: 10px;
+    color: #EF51A5;
+    font-weight: 500;
+}
+
+#about .experience .experience-text .experience-list p span {
+    margin-left: 15px;
+}
+
+/* skills */
+
+.skills-menu-circle {
+    width: 47px;
+    height: 47px;
+    border-radius: 47px;
+    background: #EF51A5;
+    position: absolute;
+    top: 28px;
+    left: 875px;
+}
+
+#skills-contants {
+    display: flex;
+    flex-flow: row;
+}
+#skills .skills-webpublishing {
+    width: 617px;
+    height: 617px;
+    border-radius: 617px;
+    background-color: #FFFEF1;
+    margin-left: 70px;
+}
+
+#skills .skills-webpublishing .skills-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 617px;
+    height: 617px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+#skills .skills-webpublishing .skills-group {
+    margin-top: 10px;
+}
+
+#skills .skills-webpublishing .skills-group .skills-icon-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    color: #EF51A5;
+}
+
+#skills .skills-webpublishing .skills-group .skills-icon-text img {
+    margin-right: 38px;
+}
+
+#skills .skills-webpublishing .skills-group .icon-html {
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills .etc {
+    width: 617px;
+    height: 617px;
+    border-radius: 617px;
+    background-color: #FFFEF1;
+    margin-left: 70px;
+}
+
+#skills .etc .skills-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 617px;
+    height: 617px;
+}
+
+#skills .etc .etc-icon-text {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 80px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+#skills .etc .etc-icon-text img {
+    margin-left: 13px;
+}
+
+#skills .etc .etc-icon-text p {
+    color: #EF51A5;
+    margin-left: 26px;
+}
+
+/* 포트폴리오-메인 */
+
+.portfolio-home-menu-circle {
+    width: 47px;
+    height: 47px;
+    border-radius: 47px;
+    background: #EF51A5;
+    position: absolute;
+    top: 28px;
+    left: 1105px;
+}
+
+#portfolio-menu {
+    display: flex;
+    flex-flow: row;
+}
+#portfolio-home .portfolio-webpublishing {
+    width: 518px;
+    height: 518px;
+    border-radius: 617px;
+    background-color: #FFFEF1;
+    margin-left: 256px;
+    /* margin-bottom: 117px; */
+}
+#portfolio-home .portfolio-design {
+    width: 518px;
+    height: 518px;
+    border-radius: 617px;
+    background-color: #FFFEF1;
+    margin-bottom: 100px;
+    margin-left: 60px;
+}
+
+#portfolio-home .portfolio-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 518px;
+    height: 518px;
+    border-radius: 51px;
+}
+
+#portfolio-home .portfolio-webpublishing:hover {
+    background-color: rgba(239, 81, 165, 0.5);
+}
+
+#portfolio-home .portfolio-design:hover {
+    background-color: rgba(239, 81, 165, 0.5);
+}
+
+#portfolio-home .portfolio-webpublishing .portfolio-group {
+    margin-top: 30px;
+}
+
+#portfolio-home .portfolio-webpublishing .portfolio-group .portfolio-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contact */
+
+.contact-menu-circle {
+    width: 47px;
+    height: 47px;
+    border-radius: 47px;
+    background: #EF51A5;
+    position: absolute;
+    top: 28px;
+    left: 1390px;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact .contact-title {
+    width: 640px;
+    height: 640px;
+    border-radius: 640px;
+    background: rgba(255, 213, 213, 0.83);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 51px;
+    margin-top: 50px;
+}
+
+#contact .contact-title h4 {
+    margin-bottom: 3px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #1b000e;
+}
+
+#contact .contact-title p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #450527;
+}
+
+#contact .contact-title .contact-icon {
+    margin-top: 12px;
+    margin-bottom: 47px;
+    width: 154px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .contact-title h2 {
+    font-weight: 600;
+    font-size: 50px;
+    color: #fff;
+    -webkit-text-stroke: 2px #CC1273;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-img {
+    width: 233px;
+    height: 233px;
+    border-radius: 233px;
+    border: 5px solid rgba(239, 81, 165, 1);
+    position: absolute;
+    right: 500px;
+    top: 350px;
+    background-image: url(../images/eunsaem-contact.jpg);
+    background-size: cover;
+}
+
+#main-footer p {
+    margin-bottom: 20px;
+}
+
+/* 포트폴리오-웹 */
+
+#portfolio-web .header-component {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
+
+#portfolio-web .portfolio-home-menu-circle {
+    z-index: 10;
+}
+
+#portfolio-web #menu {
+    display: flex;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+#portfolio-web #menu .home-btn a {
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#portfolio-web #menu .home-btn {
+    background-color:#F89827;
+    margin-left: 950px;
+
+}
+
+#portfolio-web #menu li {
+    width: 89px;
+    height: 89px;
+    background-color: #ef51a5;
+    border-radius: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 30px;
+    margin-top: 35px;
+    line-height: 23px;
+    text-align: center;
+}
+
+#portfolio-web #menu li a {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+
+#portfolio-web #fullpage .slide .portfolio-img {
+    width: 500px;
+    margin-top: 150px;
+}
+
+#portfolio-web #fullpage .slide .portfolio-mobile-img {
+    height: 530px;
+    margin-left: 50px;
+    margin-top: 220px;
+}
+
+#portfolio-web #fullpage .slide .portfolio-web-img {
+    width: 500px;
+    margin-top: 150px;
+}
+
+#portfolio-web #fullpage {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* border: 2px solid #333; */
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+#portfolio-web #fullpage .slide ul {
+    width: 1320px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#portfolio-web #fullpage .section {
+    position: relative;
+}
+
+#portfolio-web .portfolio {
+    width: 600px;
+    height: 680px;
+    box-sizing: border-box;
+    background-color: #FFFEF1;
+    border-radius: 120px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+#portfolio-web #fullpage .section .menu-title p {
+    position: fixed;
+    color: #000;
+    width: 130px;
+    height: 130px;
+    border-radius: 130px;
+    background-color: #cc1273;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 120px;
+    margin-top: 115px;
+    z-index: 5;
+}
+
+#portfolio-web .portfolio h4 {
+    display: flex;
+    flex-flow: column;
+}
+
+#portfolio-web .portfolio .info {
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+#portfolio-web .portfolio .info-2 {
+    width: 481px;
+    height: 609px;
+}
+
+#portfolio-web .portfolio .info-2 p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+    display: flex;
+    flex-flow: row;
+}
+
+#portfolio-web .ssak3 h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #1D6E44;
+}
+
+#portfolio-web .ssak3 .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1D6E44;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-web .portfolio .info-2 .portfolio-icon {
+    width: 353px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#portfolio-web .portfolio .info-2 .portfolio-btn {
+    width: 428px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+#portfolio-web .portfolio .info-2 .portfolio-btn .btn {
+    width: 200px;
+    height: 70px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 54px;
+}
+
+#portfolio-web .ssak3 .info-2 .portfolio-btn .btn {
+    background-color: #1D6E44;
+    color: #fff;
+}
+
+#portfolio-web .dtcu h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #FF6A58;
+}
+
+#portfolio-web .dtcu .info-2 p span {
+    font-weight: 600;
+    font-size: 15px;
+    color: #FF6A58;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-web .dtcu .info-2 .portfolio-btn .btn {
+        background-color: #FF6A58;
+        color: #fff;
+}
+
+#portfolio-web .invitation h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #F19E9E;
+}
+
+#portfolio-web .invitation .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #F19E9E;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-web .invitation .info-2 .portfolio-btn .btn {
+        background-color: #F19E9E;
+        color: #fff;
+}
+
+#portfolio-web .animal h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #1ABC9C;
+}
+
+#portfolio-web .animal .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1ABC9C;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-web .animal .info-2 .portfolio-btn .btn {
+        background-color: #1ABC9C;
+        color: #fff;
+}
+
+#portfolio-web .chonbang h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #F89827;
+}
+
+#portfolio-web .chonbang .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #F89827;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-web .chonbang .info-2 .portfolio-btn .btn {
+        background-color: #F89827;
+        color: #fff;
+}
+
+#portfolio-web .tvn h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #FA0129;
+}
+
+#portfolio-web .tvn .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #FA0129;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-web .tvn .info-2 .portfolio-btn .btn {
+        background-color: #FA0129;
+        color: #fff;
+}
+
+#portfolio-web .kidsnote h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #06A7E2;
+}
+
+#portfolio-web .kidsnote .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #06A7E2;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-web .kidsnote .info-2 .portfolio-btn .btn {
+        background-color: #06A7E2;
+        color: #fff;
+}
+
+/* 디자인 */
+
+#portfolio-design .header-component {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
+
+#portfolio-design .portfolio-home-menu-circle {
+    z-index: 10;
+}
+
+#portfolio-design #menu {
+    display: flex;
+    margin-left: 500px;
+}
+
+#portfolio-design #menu .home-btn a {
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#portfolio-design #menu .home-btn {
+    background-color:#F89827;
+    margin-left: 950px;
+
+}
+
+#portfolio-design #menu li {
+    width: 89px;
+    height: 89px;
+    background-color: #ef51a5;
+    border-radius: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 30px;
+    margin-top: 35px;
+    line-height: 23px;
+    text-align: center;
+}
+
+#portfolio-design #menu li a {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+
+#portfolio-design #fullpage .slide .portfolio-img {
+    width: 500px;
+}
+
+#portfolio-design #fullpage .slide .portfolio-mobile-img {
+    height: 530px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+#portfolio-design #fullpage .slide .portfolio-web-img {
+    width: 500px;
+}
+
+#portfolio-design #fullpage {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* border: 2px solid #333; */
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+#portfolio-design #fullpage .slide ul {
+    width: 1320px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#portfolio-design #fullpage .section {
+    position: relative;
+}
+
+#portfolio-design .portfolio {
+    width: 721px;
+    height: 680px;
+    box-sizing: border-box;
+    background-color: #FFFEF1;
+    border-radius: 120px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    padding-top: 50px;
+}
+
+#portfolio-design #fullpage .section .menu-title p {
+    position: fixed;
+    color: #000;
+    width: 149px;
+    height: 149px;
+    border-radius: 149px;
+    background-color: #cc1273;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 120px;
+    margin-top: 60px;
+    z-index: 5;
+}
+
+#portfolio-design .portfolio h4 {
+    display: flex;
+    flex-flow: column;
+}
+
+#portfolio-design .portfolio .info {
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+#portfolio-design .portfolio .info-2 {
+    width: 481px;
+    height: 609px;
+}
+
+#portfolio-design .portfolio .info-2 p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+    display: flex;
+    flex-flow: row;
+}
+
+#portfolio-design .portfolio .info-2 .portfolio-icon {
+    width: 353px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#portfolio-design .portfolio .info-2 .portfolio-btn {
+    width: 428px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+#portfolio-design .portfolio .info-2 .portfolio-btn .btn {
+    width: 200px;
+    height: 70px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 54px;
+}
+
+
+#portfolio-design .sale h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #271E8D;
+}
+
+#portfolio-design .sale .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #271E8D;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-design .sale .info-2 .portfolio-btn .btn {
+        background-color: #271E8D;
+        color: #fff;
+}
+
+#portfolio-design .drama h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #CC2222;
+}
+
+#portfolio-design .drama .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #CC2222;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-design .drama .info-2 .portfolio-btn .btn {
+        background-color: #CC2222;
+        color: #fff;
+}
+
+#portfolio-design .typo-web h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    color: #447933;
+}
+
+#portfolio-design .typo-web .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #447933;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-design .typo-web .info-2 .portfolio-btn .btn {
+        background-color: #447933;
+        color: #fff;
+}
+
+#portfolio-design .typo-photoshop h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    margin-top: 75px;
+    color: #00185B;
+}
+
+#portfolio-design .typo-photoshop .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #00185B;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-design .florence h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    margin-top: 75px;
+    color: #D3555A;
+}
+
+#portfolio-design .florence .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #D3555A;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-design .fila h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    margin-top: 75px;
+    color: #0A315C;
+}
+
+#portfolio-design .fila .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #0A315C;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+#portfolio-design #section3 .portfolio-fila-img {
+    width: 300px;
+    margin-left: 50px;
+}
+
+#portfolio-design .innisfree h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 46px;
+    margin-top: 75px;
+    color: #7D9C76;
+}
+
+#portfolio-design .innisfree .info-2 p span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #7D9C76;
+    margin-right: 20px;
+    width: 69px;
+    box-sizing: border-box;
+}
+
+/* ssak3-info */
+
+#info .info-menu {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 980px;
+    padding-bottom: 30px;
+}
+
+#info .info-menu li {
+    width: 89px;
+    height: 89px;
+    border-radius: 89px;
+    font-size: 18px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#info .info-menu li a {
+    color: #fff;
+}
+
+#info .info-bg {
+    width: 1440px;
+    background-color: #FFFEF1;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 60px;
+}
+
+#info .info-bg .info-img img {
+    width: 100%;
+    border-radius: 60px;
+    /* background-image: url(../images/info-ssak3-mobile.png); */
+}
+
+#info .ssak3 li {
+    background-color: #1D6E44;
+    color: #fff;
+}
+
+#info .dtcu li {
+    background-color: #ff5542;
+    color: #fff;
+}
+
+#info .invitation li {
+    background-color: #FFC7C7;
+}
+
+#info .invitation li a {
+    color: #333;
+}
+
+#info .animal li {
+    background-color: #1ABC9C;
+}
+
+#info .chonbang li {
+    background-color: #F9941E;
+}
+
+#info .tvn li {
+    background-color: #FA0028;
+}
+
+#info .kidsnote li {
+    background-color: #06A7E2;
+}
+
+#info .sale li {
+    background-color: #271E8D;
+}
+
+#info .drama li {
+    background-color: #CC2222;
+}
+
+#info .typo li {
+    background-color: #41772F;
+}
+
+/* 오른쪽 메뉴 버튼 */
+
+#fp-nav ul {
+    display: flex;
+    flex-flow: column;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: #CC1273;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+
+/* slider arrow */
+.fp-controlArrow.fp-prev{
+    left: 20px;
+  }
+  
+  .fp-controlArrow.fp-next{
+    right: 20px;
+  }
