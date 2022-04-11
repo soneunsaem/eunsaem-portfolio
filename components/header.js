@@ -8,28 +8,28 @@ function header () {
                     <img src="./images/logo.svg" alt="로고">
                 </a>
             </h1>
-                <div class="toggle-menu">
-                    <a class="toggle-menu-btn mobile-only">
-                        <img src="./images/toggle-menu-btn.svg" alt="모바일메뉴버튼">
-                    </a>
-                </div>
-                    <nav id="gnb">
-                        <ul>
-                            <li>
-                                <a href="about.html"> ABOUT </a>
-                            </li>
-                            <li>
-                                <a href="skills.html"> SKILLS </a>
-                            </li>
-                            <li>
-                                <a href="portfolio-home.html"> PORTFOLIO </a>
-                            </li>
-                            <li>
-                                <a href="contact.html"> CONTACT </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="toggle-menu">
+                <a class="toggle-menu-btn mobile-only">
+                    <img src="./images/toggle-menu-btn.svg" alt="모바일메뉴버튼">
+                </a>
             </div>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="about.html"> ABOUT </a>
+                        </li>
+                        <li>
+                            <a href="skills.html"> SKILLS </a>
+                        </li>
+                        <li>
+                            <a href="portfolio-home.html"> PORTFOLIO </a>
+                        </li>
+                        <li>
+                            <a href="contact.html"> CONTACT </a>
+                        </li>
+                     </ul>
+                </nav>
+        </div>
     </header>
     `
  }
