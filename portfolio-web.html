@@ -46,24 +46,27 @@
     <!--해더-->
     <div class="header-component">
         <script src="./components/header.js"></script>
-        <ul id="menu" class="container">
-            <li data-menuanchor="firstPage" class="active">
-                <a href="#firstPage">PC</a>
-            </li>
-            <li data-menuanchor="secondPage">
-                <a href="#secondPage">MOBILE</a>
-            </li>
-            <li data-menuanchor="thirdPage">
-                <a href="#thirdPage">반응형</a>
-            </li>
-            <li class="home-btn">
-                <a href="./portfolio-home.html">PORTFOLIO <br> HOME</a>
-            </li>
-        </ul>
     </div>
-    <div id="fullpage" class="container">
+    <div id="fullpage">
         <div class="section" id="section1">
-          <div class="menu-title"><p>WEB <br>PUBLISHING<br>(PC)</p></div>
+            <ul id="menu" class="container">
+                <div class="menu-title">
+                    <p>WEB <br>PUBLISHING<br>(PC)</p>
+                </div>
+                <li data-menuanchor="firstPage">
+                    <a href="#firstPage">PC</a>
+                </li>
+                <li data-menuanchor="secondPage">
+                    <a href="#secondPage">MOBILE</a>
+                </li>
+                <li data-menuanchor="thirdPage">
+                    <a href="#thirdPage">반응형</a>
+                </li>
+                <li class="home-btn">
+                    <a href="./portfolio-home.html">PORTFOLIO <br> HOME</a>
+                </li>
+            </ul>
+          
             <div class="slide" data-anchor="slide1">
                 <ul>
                   <li>
@@ -84,8 +87,8 @@
                         <p><span>SKILL</span> <br> 
                             <div class="portfolio-icon">
                                 <img src="./images/icon-figma.svg" alt="피그마">
-                                <img src="./images/icon-css.svg" alt="css">
                                 <img src="./images/icon-html.svg" alt="html">
+                                <img src="./images/icon-css.svg" alt="css">
                             </div>
                         </p>
                         <p>
@@ -105,8 +108,8 @@
                     </div>
                   </li>
                 </ul>
-              </div>
-              <div class="slide" data-anchor="slide2">
+            </div>
+            <div class="slide" data-anchor="slide2">
                 <ul>
                   <li>
                     <img src="./images/mockup-dtcu-pc.png" alt="dtcu" class="portfolio-img">
@@ -149,11 +152,27 @@
                     </div>
                   </li>
                 </ul>
-              </div>
+            </div>
         </div>
-        
+
         <div class="section" id="section2">
-          <div class="menu-title"><p>WEB <br>PUBLISHING<br>(MOBILE)</p></div>
+            <ul id="menu" class="container">
+                <div class="menu-title">
+                    <p>WEB <br>PUBLISHING<br>(MOBILE)</p>
+                </div>
+                <li data-menuanchor="firstPage">
+                    <a href="#firstPage">PC</a>
+                </li>
+                <li data-menuanchor="secondPage">
+                    <a href="#secondPage">MOBILE</a>
+                </li>
+                <li data-menuanchor="thirdPage">
+                    <a href="#thirdPage">반응형</a>
+                </li>
+                <li class="home-btn">
+                    <a href="./portfolio-home.html">PORTFOLIO <br> HOME</a>
+                </li>
+            </ul>
             <div class="slide" data-anchor="slide1">
               <ul>
                 <li>
@@ -196,7 +215,7 @@
                 </li>
               </ul>
             </div>
-            <div class="slide" data-anchor="slide2">
+            <div class="slide" data-anchor="slide2" id="silde2">
               <ul>
                 <li>
                   <img src="./images/mockup-animal-mobail.png" alt="동물정보" class="portfolio-mobile-img">
@@ -240,7 +259,23 @@
         </div>
 
         <div class="section" id="section3">
-          <div class="menu-title"><p>WEB <br>PUBLISHING<br>(반응형)</p></div>
+            <ul id="menu" class="container">
+                <div class="menu-title">
+                    <p>WEB <br>PUBLISHING<br>(반응형)</p>
+                </div>
+                <li data-menuanchor="firstPage">
+                    <a href="#firstPage">PC</a>
+                </li>
+                <li data-menuanchor="secondPage">
+                    <a href="#secondPage">MOBILE</a>
+                </li>
+                <li data-menuanchor="thirdPage">
+                    <a href="#thirdPage">반응형</a>
+                </li>
+                <li class="home-btn">
+                    <a href="./portfolio-home.html">PORTFOLIO <br> HOME</a>
+                </li>
+            </ul>
             <div class="slide" data-anchor="slide1">
                  <ul>
                   <li>
@@ -282,8 +317,8 @@
                     </div>
                   </li>
                 </ul>
-              </div>
-              <div class="slide" data-anchor="slide2">
+            </div>
+            <div class="slide" data-anchor="slide2">
                 <ul>
                   <li>
                     <img src="./images/portfolio-tvn-web.png" alt="tvn" class="portfolio-web-img">
@@ -325,7 +360,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="slide" data-anchor="slide3">
+            <div class="slide" data-anchor="slide3">
                 <ul>
                   <li>
                     <img src="./images/portfolio-kidsnote-web.png" alt="키즈노트" class="portfolio-web-img">
@@ -365,9 +400,10 @@
                     </div>
                   </li>
                 </ul>
-                </div>
+            </div>
         </div>
     </div>
+    
 
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

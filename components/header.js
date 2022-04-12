@@ -2,7 +2,7 @@
 function header () {
     return `
     <header id="main-header">
-        <div class="main-header-bar container">
+        <div class="main-header-bar">
             <h1>
                 <a href="index.html">
                     <img src="./images/logo.svg" alt="로고">

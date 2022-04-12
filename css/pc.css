@@ -5,42 +5,44 @@
 }
 
 .container {
-    width: 1440px;
+    width: 80vw;
     margin: 0 auto;
 }
 
 #main-header {
     background-color: #FBE45B;
-    height: 98px;
+    height: 90px;
     width: 100vw;
+}
+
+#main-header #gnb {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-header #gnb ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 85%;
 }
 
 #main-header .main-header-bar {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#main-header .main-header-bar h1 {
-    margin-left: 20px;
-}
-
-ul {
-    display: flex;
-    line-height: 45px;
-}
-
 li {
-    margin-left: 100px;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 65px;
 }
 
 h2 {
@@ -57,44 +59,40 @@ h4 {
 
 /* home */
 
-#main {
-    height: 100vh;
-    position: relative;
-}
-
 #main #title {
     /* border: 2px solid #333; */
     height: calc(100vh - 130px);
+    position: relative;
 }
 
-#main .circle1 {
+#main #title .circle1 {
     width: 191px;
     height: 191px;
     background-color: #fff;
     border-radius: 191px;
     position: absolute;
-    left: 450px;
-    top: 250px;
+    left: 200px;
+    top: 150px;
 }
 
-#main .circle2 {
+#main #title .circle2 {
     position: absolute;
     width: 191px;
     height: 191px;
     border-radius: 191px;
     background-color: #EF51A5;
-    right: 480px;
-    bottom: 280px;
+    right: 380px;
+    bottom: 250px;
 }
 
-#main .circle3 {
+#main #title .circle3 {
     position: absolute;
     width: 100px;
     height: 100px;
     border-radius: 100px;
     background-color: #fff;
-    right: 430px;
-    bottom: 270px;
+    right: 350px;
+    bottom: 220px;
 }
 
 #main #title {
@@ -124,21 +122,30 @@ h4 {
 
 #main-footer {
     text-align: center;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 30px;
+    margin-top: 10px;
+    line-height: 20px;
+    color: #333;
+    height: 5%;
+
 }
 
 /* 서브페이지 제목 */
+
+body {
+    position: relative;
+}
 
 .sub-title {
     width: 191px;
     height: 191px;
     border-radius: 191px;
     background-color: #CC1273;
-    position: relative;
-    top: 100px;
-    left: 64px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    z-index: 1;
 }
 
 .sub-title h3 {
@@ -157,12 +164,28 @@ h4 {
 }
 
 /* about */
+
+#about-contants {
+    display: flex;
+    height: 85%;
+    /* border: 2px solid #333; */
+}
+
 #about .profile {
     width: 617px;
     height: 617px;
     border-radius: 617px;
     background-color: #FFD4D4;
     margin-left: 70px;
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column;
+}
+
+#about .profile .profile-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #about .profile .profile-info {
@@ -184,19 +207,11 @@ h4 {
     background-image: url(../images/eunsaem-main.jpg);
     background-size: cover;
 }
-
-#about .profile .profile-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
 #about .profile .profile-group p {
     font-size: 20px;
     font-weight: 500;
     color: #1B000E;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 #about .profile .profile-group p span {
@@ -205,14 +220,21 @@ h4 {
     color: #450527;
 }
 
+#about .about-sub {
+    /* border: 2px solid #333; */
+    margin-top: 100px;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+}
+
 #about .license {
     width: 391px;
     height: 391px;
     border-radius: 391px;
     background-color: #FFFEF1;
-    position: absolute;
-    top: 200px;
-    left: 915px;
+    /* position:absolute;
+    top: 10px; */
 }
 
 #about .license .license-text {
@@ -239,9 +261,8 @@ h4 {
     height: 471px;
     border-radius: 471px;
     background-color: #FFFEF1;
-    position: absolute;
-    top: 440px;
-    left: 1240px;
+    align-self: flex-end;
+
 }
 
 #about .experience .experience-text {
@@ -266,18 +287,29 @@ h4 {
 /* skills */
 
 #skills-contants {
+    /* border: 2px solid #333; */
+    width: 90%;
+    height: 85%;
+    margin: 0 auto;
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
 }
-#skills .skills-webpublishing {
+
+#skills .skills-circles {
+    /* border: 2px solid #333; */
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top:  100px;
+}
+
+#skills .skills-info {
     width: 617px;
     height: 617px;
     border-radius: 617px;
     background-color: #FFFEF1;
-    margin-left: 70px;
-}
-
-#skills .skills-webpublishing .skills-info {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -285,29 +317,37 @@ h4 {
     width: 617px;
     height: 617px;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 13px;
 }
 
-#skills .skills-webpublishing .skills-group {
-    margin-top: 10px;
-}
 
 #skills .skills-webpublishing .skills-group .skills-icon-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 30px;
+    width: 100%;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: #EF51A5;
+    /* border: 2px solid #333; */
 }
 
-#skills .skills-webpublishing .skills-group .skills-icon-text img {
-    margin-right: 38px;
+#skills .skills-webpublishing .skills-group .skills-icon-text p span {
+    margin-left: 5px;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #cc1273;
 }
 
 #skills .skills-webpublishing .skills-group .icon-html {
+    /* border: 1px solid #333; */
+    width: 80%;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+}
+
+#skills .skills-webpublishing .skills-group .icon-html img {
+    width: 80px;
 }
 
 #skills .etc {
@@ -315,7 +355,7 @@ h4 {
     height: 617px;
     border-radius: 617px;
     background-color: #FFFEF1;
-    margin-left: 70px;
+    /* margin-left: 70px; */
 }
 
 #skills .etc .skills-info {
@@ -327,46 +367,71 @@ h4 {
     height: 617px;
 }
 
+#skills .etc .etc-icon-text p span {
+    margin-left: 5px;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #cc1273;
+}
+
 #skills .etc .etc-icon-text {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-bottom: 80px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 35px;
-}
-
-#skills .etc .etc-icon-text img {
-    margin-left: 13px;
-}
-
-#skills .etc .etc-icon-text p {
+    /* border: 1px solid #333; */
+    /* width: 520px; */
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: #EF51A5;
-    margin-left: 26px;
+    font-weight: 500;
+    font-size: 13px;
 }
+
+#skills .etc .etc-icon {
+    /* width: 75%; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#skills .etc .etc-icon img {
+    width: 80px;
+}
+
+
 
 /* 포트폴리오-메인 */
 
 #portfolio-menu {
+    width: 90%;
+    height: 85%;
+    margin: 0 auto;
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
+    /* border: 2px solid #333; */
 }
+
+#portfolio-menu .portfolio-menu-list {
+    display: flex;
+    /* border: 2px solid #333; */
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
 #portfolio-home .portfolio-webpublishing {
     width: 518px;
     height: 518px;
     border-radius: 617px;
     background-color: #FFFEF1;
-    margin-left: 256px;
-    /* margin-bottom: 117px; */
 }
 #portfolio-home .portfolio-design {
     width: 518px;
     height: 518px;
     border-radius: 617px;
     background-color: #FFFEF1;
-    margin-bottom: 100px;
-    margin-left: 60px;
 }
 
 #portfolio-home .portfolio-info {
@@ -398,9 +463,13 @@ h4 {
 }
 
 /* contact */
-
-#contact {
+#contact #contact-circle {
     position: relative;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact .contact-title {
@@ -413,8 +482,6 @@ h4 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 51px;
-    margin-top: 50px;
 }
 
 #contact .contact-title h4 {
@@ -434,10 +501,14 @@ h4 {
 
 #contact .contact-title .contact-icon {
     margin-top: 12px;
-    margin-bottom: 47px;
-    width: 154px;
+    /* margin-bottom: 47px; */
+    width: 178px;
     display: flex;
     justify-content: space-between;
+}
+
+#contact .contact-title .contact-icon img {
+    width: 80px;
 }
 
 #contact .contact-title h2 {
@@ -454,14 +525,10 @@ h4 {
     border-radius: 233px;
     border: 5px solid rgba(239, 81, 165, 1);
     position: absolute;
-    right: 500px;
-    top: 350px;
+    right: 400px;
+    top: 200px;
     background-image: url(../images/eunsaem-contact.jpg);
     background-size: cover;
-}
-
-#main-footer p {
-    margin-bottom: 20px;
 }
 
 /* 포트폴리오-웹 */
@@ -472,101 +539,84 @@ h4 {
     width: 100vw;
 }
 
-#portfolio-web #menu {
-    display: flex;
-    margin-left: 500px;
-    margin-top: 50px;
-}
 
-#portfolio-web #menu .home-btn a {
+#menu .home-btn a {
     font-size: 13px;
     text-align: center;
     line-height: 20px;
 }
 
-#portfolio-web #menu .home-btn {
-    background-color:#F89827;
-    margin-left: 950px;
-
+#menu .home-btn {
+    display: none;
 }
 
-#portfolio-web #menu li {
+#menu {
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: left;
+    /* outline: 1px solid red; */
+    width: 100%;
+    margin-top: 110px;
+    margin-left: 150px;
+  }
+
+#menu li {
     width: 89px;
     height: 89px;
-    background-color: #ef51a5;
-    border-radius: 89px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    margin-left: 30px;
-    margin-top: 35px;
-    line-height: 23px;
+    background-color: #ef51a5;
+    border-radius: 89px;
+    margin-left: 10px;
+    margin-top: 20px;
     text-align: center;
+    line-height: 25px;
 }
 
-#portfolio-web #menu li a {
+#menu li a {
     font-family: 'IBM Plex Sans KR', sans-serif;
     color: #fff;
     font-size: 18px;
 }
 
-#portfolio-web #fullpage .slide .portfolio-img {
-    width: 500px;
-    margin-top: 150px;
-}
-
-#portfolio-web #fullpage .slide .portfolio-mobile-img {
-    height: 530px;
-    margin-left: 50px;
-    margin-top: 220px;
-}
-
-#portfolio-web #fullpage .slide .portfolio-web-img {
-    width: 500px;
-    margin-top: 150px;
-}
-
-#portfolio-web #fullpage {
+#fullpage {
     display: flex;
     flex-flow: column;
     align-items: center;
-    /* border: 2px solid #333; */
-    margin-top: 50px;
-    padding-top: 50px;
 }
 
-#portfolio-web #fullpage .slide ul {
-    width: 1320px;
+#fullpage .slide .portfolio-img {
+    width: 80%;
+}
+
+#fullpage .slide .portfolio-mobile-img {
+    width: 500px;
+}
+
+#fullpage .slide .portfolio-web-img {
+    width: 95%;
+}
+
+#fullpage .slide ul {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#portfolio-web #fullpage .section {
+#fullpage .section {
     position: relative;
+    width: 90%;
 }
 
-#portfolio-web .portfolio {
-    width: 600px;
-    height: 680px;
-    box-sizing: border-box;
-    background-color: #FFFEF1;
-    border-radius: 120px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    margin-left: 20px;
-    margin-top: 100px;
-    padding-top: 50px;
-}
-
-#portfolio-web #fullpage .section .menu-title p {
-    position: fixed;
-    color: #000;
+#menu .menu-title p {
     width: 130px;
     height: 130px;
     border-radius: 130px;
@@ -578,42 +628,52 @@ h4 {
     color: #fff;
     font-weight: 500;
     font-size: 18px;
-    line-height: 25px;
-    margin-left: 120px;
-    margin-top: 115px;
     z-index: 5;
+    /* box-sizing: border-box; */
 }
 
-#portfolio-web .portfolio h4 {
+/* 간략 설명 */
+
+.portfolio {
+    width: 50%;
+    min-width: 500px;
+    height: 520px;
+    box-sizing: border-box;
+    background-color: #FFFEF1;
+    border-radius: 120px;
     display: flex;
     flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
 }
 
-#portfolio-web .portfolio .info {
+.portfolio .info {
     font-size: 13px;
     line-height: 22px;
     text-align: center;
     color: #333;
     margin-bottom: 25px;
 }
-#portfolio-web .portfolio .info-2 {
+.portfolio .info-2 {
     width: 481px;
     height: 609px;
 }
 
-#portfolio-web .portfolio .info-2 p {
+.portfolio .info-2 p {
     font-weight: 400;
     font-size: 15px;
     color: #000;
     display: flex;
     flex-flow: row;
+    line-height: 28px;
 }
 
 #portfolio-web .ssak3 h4 {
     font-weight: 600;
     font-size: 25px;
     text-align: center;
-    margin-bottom: 46px;
+    margin-bottom: 25px;
     color: #1D6E44;
 }
 
@@ -626,26 +686,32 @@ h4 {
     box-sizing: border-box;
 }
 
-#portfolio-web .portfolio .info-2 .portfolio-icon {
-    width: 353px;
+.portfolio .info-2 .portfolio-icon {
+    width: 280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-top: 5px;
 }
 
-#portfolio-web .portfolio .info-2 .portfolio-btn {
-    width: 428px;
-    height: 70px;
+.portfolio .info-2 .portfolio-icon img {
+    width: 65px;
+}
+
+.portfolio .info-2 .portfolio-btn {
+    width: 345px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    margin-top: 40px;
 
 }
 
-#portfolio-web .portfolio .info-2 .portfolio-btn .btn {
-    width: 200px;
-    height: 70px;
+.portfolio .info-2 .portfolio-btn .btn {
+    width: 150px;
+    height: 60px;
     box-sizing: border-box;
     border-radius: 10px;
     font-size: 20px;
@@ -653,7 +719,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 54px;
+    margin-bottom: 10px;
 }
 
 #portfolio-web .ssak3 .info-2 .portfolio-btn .btn {
@@ -665,7 +731,7 @@ h4 {
     font-weight: 600;
     font-size: 25px;
     text-align: center;
-    margin-bottom: 46px;
+    margin-bottom: 25px;
     color: #FF6A58;
 }
 
@@ -801,50 +867,8 @@ h4 {
     width: 100vw;
 }
 
-#portfolio-design .portfolio-home-menu-circle {
-    z-index: 10;
-}
-
-#portfolio-design #menu {
-    display: flex;
-    margin-left: 500px;
-}
-
-#portfolio-design #menu .home-btn a {
-    font-size: 13px;
-    text-align: center;
-    line-height: 20px;
-}
-
-#portfolio-design #menu .home-btn {
-    background-color:#F89827;
-    margin-left: 950px;
-
-}
-
-#portfolio-design #menu li {
-    width: 89px;
-    height: 89px;
-    background-color: #ef51a5;
-    border-radius: 89px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    margin-left: 30px;
-    margin-top: 35px;
-    line-height: 23px;
-    text-align: center;
-}
-
-#portfolio-design #menu li a {
-    font-family: 'IBM Plex Sans KR', sans-serif;
-    color: #fff;
-    font-size: 18px;
-}
-
 #portfolio-design #fullpage .slide .portfolio-img {
-    width: 500px;
+    width: 85%;
 }
 
 #portfolio-design #fullpage .slide .portfolio-mobile-img {
@@ -857,117 +881,10 @@ h4 {
     width: 500px;
 }
 
-#portfolio-design #fullpage {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    /* border: 2px solid #333; */
-    margin-top: 50px;
-    padding-top: 50px;
-}
-
-#portfolio-design #fullpage .slide ul {
-    width: 1320px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#portfolio-design #fullpage .section {
-    position: relative;
-}
-
-#portfolio-design .portfolio {
-    width: 721px;
-    height: 680px;
-    box-sizing: border-box;
-    background-color: #FFFEF1;
-    border-radius: 120px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    margin-left: 20px;
-    padding-top: 50px;
-}
-
-#portfolio-design #fullpage .section .menu-title p {
-    position: fixed;
-    color: #000;
-    width: 149px;
-    height: 149px;
-    border-radius: 149px;
-    background-color: #cc1273;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    margin-left: 120px;
-    margin-top: 60px;
-    z-index: 5;
-}
-
 #portfolio-design .portfolio h4 {
     display: flex;
     flex-flow: column;
 }
-
-#portfolio-design .portfolio .info {
-    font-size: 13px;
-    line-height: 22px;
-    text-align: center;
-    color: #333;
-    margin-bottom: 25px;
-}
-#portfolio-design .portfolio .info-2 {
-    width: 481px;
-    height: 609px;
-}
-
-#portfolio-design .portfolio .info-2 p {
-    font-weight: 400;
-    font-size: 15px;
-    color: #000;
-    display: flex;
-    flex-flow: row;
-}
-
-#portfolio-design .portfolio .info-2 .portfolio-icon {
-    width: 353px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-#portfolio-design .portfolio .info-2 .portfolio-btn {
-    width: 428px;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-
-}
-
-#portfolio-design .portfolio .info-2 .portfolio-btn .btn {
-    width: 200px;
-    height: 70px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 54px;
-}
-
 
 #portfolio-design .sale h4 {
     font-weight: 600;
@@ -1114,6 +1031,13 @@ h4 {
 
 /* ssak3-info */
 
+#info .header-component {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+}
+
 #info .info-menu {
     width: 500px;
     display: flex;
@@ -1142,15 +1066,14 @@ h4 {
     width: 1440px;
     background-color: #FFFEF1;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 200px;
+    margin-bottom: 50px;
     border-radius: 60px;
 }
 
 #info .info-bg .info-img img {
     width: 100%;
     border-radius: 60px;
-    /* background-image: url(../images/info-ssak3-mobile.png); */
 }
 
 #info .ssak3 li {
