@@ -880,6 +880,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #333;
 }
 
 /* 동물정보 */
@@ -992,7 +993,7 @@ body {
 }
 
 #portfolio-design #fullpage .slide .portfolio-innisfree-img {
-    width: 90%;
+    width: 80%;
     margin-top: 100px;
 }
 
@@ -1069,6 +1070,11 @@ body {
 
 /* florence */
 
+#portfolio-design #fullpage .slide .portfolio-florence-img {
+    width: 95%;
+    margin-top: 100px;
+}
+
 #portfolio-design #fullpage .slide .florence h4 {
     color: #D3555A;
 }
@@ -1126,6 +1132,15 @@ body {
 
 #info .info-menu li a {
     color: #fff;
+}
+
+#info .info-menu li a img {
+    width: 25px;
+    margin-top: 5px;   
+}
+
+#info .info-menu li:nth-child(2) a img {
+    width: 17px;
 }
 
 #info .info-bg {
