@@ -15,16 +15,16 @@ function header () {
             </div>
                 <nav id="gnb">
                     <ul>
-                        <li>
+                        <li class="gnb-about">
                             <a href="about.html"> ABOUT </a>
                         </li>
-                        <li>
+                        <li class="gnb-skills">
                             <a href="skills.html"> SKILLS </a>
                         </li>
-                        <li>
+                        <li class="gnb-portfolio">
                             <a href="portfolio-home.html"> PORTFOLIO </a>
                         </li>
-                        <li>
+                        <li class="gnb-contact">
                             <a href="contact.html"> CONTACT </a>
                         </li>
                      </ul>

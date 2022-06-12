@@ -6,7 +6,10 @@ $(document).ready(function () {
       anchors: ['firstPage', 'secondPage', 'thirdPage'],
       menu: '#enu',
       navigation: true,
-      navigationTooltips: ['PC', 'MOBILE', '반응형'],
+      navigationTooltips: ['1', '2', '3'],
       navigationPosition: 'right',
     });
   });
+
+
+  

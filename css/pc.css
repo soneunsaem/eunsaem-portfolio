@@ -26,7 +26,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 85%;
+    width: 65%;
+}
+
+#main-header #gnb ul li {
+    transform: perspective(1px) translateZ(0);
+}
+
+#main-header #gnb ul li:hover a {
+    border-bottom: 3px solid #FA738B;
+    color: #fff;
 }
 
 #main-header .main-header-bar {
@@ -58,65 +67,66 @@ h4 {
 }
 
 /* home */
-
-#main #title {
-    /* border: 2px solid #333; */
-    height: calc(100vh - 130px);
-    position: relative;
+#main {
+    font: 400 1em/1.5 "Neuton"; 
+    color: #333; 
+    text-align: center; margin: 0;
 }
 
-#main #title .circle1 {
-    width: 191px;
-    height: 191px;
-    background-color: #fff;
-    border-radius: 191px;
-    position: absolute;
-    left: 200px;
-    top: 150px;
-}
-
-#main #title .circle2 {
-    position: absolute;
-    width: 191px;
-    height: 191px;
-    border-radius: 191px;
-    background-color: #EF51A5;
-    right: 380px;
-    bottom: 250px;
-}
-
-#main #title .circle3 {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    background-color: #fff;
-    right: 350px;
-    bottom: 220px;
-}
-
-#main #title {
+#main .main-title {
+    height: calc(100% - 90px);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    /* border: 2px solid #333; */
+    width: 90%;
+    margin: 0 auto;
 }
 
-#main #title .main-title .main-title-text {
-    font-size: 70px;
-    font-weight: 700;
-    color: #E44D9E;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke: 2.5px #E3D7E2;
-    text-align: center;
-    line-height: 110px;
-    position: relative;
+#main .main-title p {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double #FA738B;
+	border-width: 4px 0;
+	padding-top: 60px;
+    padding-bottom: 60px;
+	width: 60%;
+    font-size: 22px;
 }
 
-#main #title .main-title span {
-    color: #512B52;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke: 2.5px #E3D7E2;
+#main .main-title span {
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding-top: 50px;
+    padding-bottom: 50px;
+	display: block;
+	margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5); 
+    font-size: 90px;
+
+/* Clip Background Image */
+
+	background: url(../images/animated-text-fill.png) repeat-y;
+	-webkit-background-clip: text;
+	background-clip: text;
+
+/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+	animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+    transform: translate3d(0,0,0);
 }
+
+/* Animate Background Image */
+@keyframes 
+    aitf {
+    0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+    }
 
 /* 풋터 */
 
@@ -128,7 +138,6 @@ h4 {
     line-height: 20px;
     color: #333;
     height: 5%;
-
 }
 
 /* 서브페이지 제목 */
@@ -163,47 +172,66 @@ body {
     color: #CC1273;
 }
 
+/* 해더 메뉴  */
+
+#about #gnb .gnb-about a { color: #fff; }
+#skills #gnb .gnb-skills a { color: #fff; }
+#portfolio-home #gnb .gnb-portfolio a { color: #fff; }
+#portfolio-web #gnb .gnb-portfolio a { color: #fff; }
+#portfolio-design #gnb .gnb-portfolio a { color: #fff; }
+#contact #gnb .gnb-contact a { color: #fff; }
+
 /* about */
 
 #about-contants {
     display: flex;
-    height: 85%;
+    justify-content: center;
+    width: 1500px;
+    margin-top: 20px;
     /* border: 2px solid #333; */
 }
 
 #about .profile {
-    width: 617px;
-    height: 617px;
-    border-radius: 617px;
-    background-color: #FFD4D4;
-    margin-left: 70px;
-    margin-top: 100px;
-    display: flex;
-    flex-flow: column;
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: #FA738B;
+    margin-left: 120px;
+    margin-top: 70px;
 }
 
 #about .profile .profile-group {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
 #about .profile .profile-info {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 617px;
-    height: 617px;
+    width: 600px;
+    height: 600px;
+}
+
+#about .profile .sub2-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#about .profile .profile-text {
+    margin-top: 70px;
+}
+
+#about .profile .profile-info .sub2-title {
+    color: #fff;
 }
 
 #about .profile .profile-info .img {
     width: 220px;
     height: 280px;
     background-color: #fff;
-    border: 5px solid #EF51A5;
     border-radius: 43px;
     margin-right: 29px;
+    margin-top: 70px;
     background-image: url(../images/eunsaem-main.jpg);
     background-size: cover;
 }
@@ -222,24 +250,24 @@ body {
 
 #about .about-sub {
     /* border: 2px solid #333; */
-    margin-top: 100px;
+    margin-top: 70px;
     width: 100%;
     height: 65vh;
-    display: flex;
+    margin-left: 40px;    
 }
 
 #about .license {
-    width: 391px;
-    height: 391px;
-    border-radius: 391px;
+    width: 600px;
+    height: 280px;
+    border-radius: 30px;
     background-color: #FFFEF1;
     /* position:absolute;
     top: 10px; */
 }
 
 #about .license .license-text {
-    width: 391px;
-    height: 391px;
+    width: 600px;
+    height: 280px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -247,7 +275,7 @@ body {
 }
 
 #about .license .license-text .license-list p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #EF51A5;
     font-weight: 500;
 }
@@ -257,17 +285,16 @@ body {
 }
 
 #about .experience {
-    width: 471px;
-    height: 471px;
-    border-radius: 471px;
+    margin-top: 40px;
+    width: 600px;
+    height: 280px;
+    border-radius: 30px;
     background-color: #FFFEF1;
-    align-self: flex-end;
-
 }
 
 #about .experience .experience-text {
-    width: 471px;
-    height: 471px;
+    width: 600px;
+    height: 280px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -275,7 +302,7 @@ body {
 }
 
 #about .experience .experience-text .experience-list p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #EF51A5;
     font-weight: 500;
 }
@@ -289,7 +316,7 @@ body {
 #skills-contants {
     /* border: 2px solid #333; */
     width: 90%;
-    height: 85%;
+    margin-top: 20px;
     margin: 0 auto;
     display: flex;
     flex-flow: row;
@@ -308,7 +335,7 @@ body {
 #skills .skills-info {
     width: 617px;
     height: 617px;
-    border-radius: 617px;
+    border-radius: 30px;
     background-color: #FFFEF1;
     display: flex;
     flex-flow: column;
@@ -323,9 +350,9 @@ body {
 
 #skills .skills-webpublishing .skills-group .skills-icon-text {
     width: 100%;
-    line-height: 30px;
+    line-height: 35px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     color: #EF51A5;
     /* border: 2px solid #333; */
 }
@@ -340,7 +367,7 @@ body {
 
 #skills .skills-webpublishing .skills-group .icon-html {
     /* border: 1px solid #333; */
-    width: 80%;
+    width: 88%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -378,17 +405,17 @@ body {
 #skills .etc .etc-icon-text {
     /* border: 1px solid #333; */
     /* width: 520px; */
-    line-height: 30px;
+    line-height: 35px;
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     color: #EF51A5;
     font-weight: 500;
     font-size: 13px;
 }
 
 #skills .etc .etc-icon {
-    /* width: 75%; */
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -404,7 +431,6 @@ body {
 
 #portfolio-menu {
     width: 90%;
-    height: 85%;
     margin: 0 auto;
     display: flex;
     flex-flow: row;
@@ -424,13 +450,13 @@ body {
 #portfolio-home .portfolio-webpublishing {
     width: 518px;
     height: 518px;
-    border-radius: 617px;
+    border-radius: 30px;
     background-color: #FFFEF1;
 }
 #portfolio-home .portfolio-design {
     width: 518px;
     height: 518px;
-    border-radius: 617px;
+    border-radius: 30px;
     background-color: #FFFEF1;
 }
 
@@ -448,8 +474,16 @@ body {
     background-color: rgba(239, 81, 165, 0.5);
 }
 
+#portfolio-home .portfolio-webpublishing:hover .sub2-title{
+    color: #fff;
+}
+
 #portfolio-home .portfolio-design:hover {
     background-color: rgba(239, 81, 165, 0.5);
+}
+
+#portfolio-home .portfolio-design:hover .sub2-title{
+    color: #fff;
 }
 
 #portfolio-home .portfolio-webpublishing .portfolio-group {
@@ -473,9 +507,9 @@ body {
 }
 
 #contact .contact-title {
-    width: 640px;
-    height: 640px;
-    border-radius: 640px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
     background: rgba(255, 213, 213, 0.83);
     display: flex;
     flex-flow: column;
@@ -513,10 +547,12 @@ body {
 
 #contact .contact-title h2 {
     font-weight: 600;
-    font-size: 50px;
-    color: #fff;
-    -webkit-text-stroke: 2px #CC1273;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    color: #fdfdfd;
+    /* -webkit-text-stroke: 2px #CC1273; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+    padding-top: 30px;
+    text-align: center;
 }
 
 .contact-img {
@@ -593,7 +629,7 @@ body {
 }
 
 #fullpage .slide .portfolio-mobile-img {
-    width: 500px;
+    width: 70%;
 }
 
 #fullpage .slide .portfolio-web-img {
@@ -636,7 +672,7 @@ body {
 
 .portfolio {
     width: 50%;
-    min-width: 500px;
+    min-width: 600px;
     height: 520px;
     box-sizing: border-box;
     background-color: #FFFEF1;
@@ -747,6 +783,10 @@ body {
 #portfolio-web .dtcu .info-2 .portfolio-btn .btn {
         background-color: #FF6A58;
         color: #fff;
+}
+
+#portfolio-web .invitation,.animal {
+    width: 1100px;
 }
 
 #portfolio-web .invitation h4 {

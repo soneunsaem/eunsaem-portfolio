@@ -104,77 +104,58 @@ body {
 /* home */
 
 #main {
-    width: 100vw;
-    height: 100vh;
-    /* position: relative; */
-    overflow: hidden;
-    /* display: flex;
-    flex-flow: column;
-    justify-content: center; */
+    font: 400 1em/1.5 "Neuton"; 
+    color: #333; 
+    text-align: center; margin: 0
 }
 
-#main #title {
-    /* border: 1px solid #333; */
-    height: 50%;
-    text-align: center;
+#main .main-title {
     display: flex;
-    flex-flow: column;
-    align-items: center;
     justify-content: center;
-    margin: 0 auto;    
-    margin-top: 120px;
-    position: relative;
-}
-
-#main #title .circle1 {
-    width: 108px;
-    height: 108px;
-    background-color: #fff;
-    border-radius: 108px;
-    position: absolute;
-    left: 10px;
-    top: 70px;
-}
-
-#main .circle2 {
-    position: absolute;
-    width: 85px;
-    height: 85px;
-    border-radius: 85px;
-    background-color: #EF51A5;
-    right: 40px;
-    bottom: 100px;
-}
-
-#main .circle3 {
-    position: absolute;
-    width: 44.5px;
-    height: 44.5px;
-    border-radius: 44.5px;
-    background-color: #fff;
-    right: 20px;
-    bottom: 90px;
-}
-#main #title .main-title {
-    display: flex;
-    flex-flow: column;
     align-items: center;
+    /* border: 2px solid #333; */
+    width: 90%;
+    height: calc(100% - 100px);
+    margin: 0 auto;
+}
+#main p {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double #FA738B;
+	border-width: 4px 0;
+	padding-top: 60px;
+    padding-bottom: 60px;
+	width: 90%;
+    font-size: 15px;
 }
 
-#main #title .main-title .main-title-text {
-    font-weight: 900;
-    color: #E44D9E;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke: 1px #E3D7E2;
-    text-align: center;
-    margin-top: 1em;
-}
+#main span {
 
-#main #title .main-title span {
-    color: #512B52;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke: 1px #E3D7E2;
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding-top: 50px;
+    padding-bottom: 50px;
+	display: block;
+	margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5); 
+
+/* Clip Background Image */
+
+	background: url(../images/animated-text-fill.png) repeat-y;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	background-clip: text;
+	animation: aitf 80s linear infinite;
+
+    transform: translate3d(0,0,0);
+	backface-visibility: hidden;
 }
+@keyframes 
+    aitf {
+    0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+    }
 
 /* 풋터 */
 
@@ -183,13 +164,14 @@ body {
     box-sizing: border-box;
     /* padding-top: 10px; */
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 #main-footer p { 
     font-size: 5px;
     font-weight: 400;
     color: #333;
+    line-height: 15px;
 }
  
 
@@ -197,16 +179,16 @@ body {
 
 .sub-title {
     width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    background-color: #CC1273;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #fa738b;
     position: absolute;
-    top: 15px;
+    top: 10px;
     left: 25px;
 }
 
 .sub-title h3 {
-    height: 100px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,8 +210,11 @@ body {
     height: 100vh;
 }
 
+#about header .gnb-about {
+    color: #fff;
+}
+
 #about #about-contants {
-    position: relative;
     width: 100%;
     display: flex;
     flex-flow: column;
@@ -239,27 +224,9 @@ body {
     margin: 0 auto;
 }
 
-#about .profile {
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-    background-color: #FFD4D4;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
-#about .profile .profile-info {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-}
-
 #about .profile .profile-info .img {
     width: 80px;
-    height: 100px;
+    height: 110px;
     background-color: #fff;
     border: 3px solid #EF51A5;
     border-radius: 15px;
@@ -284,7 +251,7 @@ body {
     font-size: 10px;
     font-weight: 500;
     color: #450527;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 #about .profile .profile-group p span {
@@ -302,25 +269,24 @@ body {
 }
 
 #about .license {
-    width: 210px;
-    height: 210px;
-    border-radius: 210px;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
     background-color: #FFFEF1;
     /* margin-left: 10px; */
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     margin-top: 10px;
 }
 
 #about .license .license-text {
-    width: 210px;
-    height: 210px;
+    width: 250px;
+    height: 200px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    margin-left: 5px;
 }
 
 #about .license .license-text .license-list p {
@@ -338,16 +304,15 @@ body {
 /* experience */
 
 #about .experience {
-    width: 240px;
-    height: 240px;
-    border-radius: 240px;
-    margin-bottom: 5px;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
     background-color: #FFFEF1;
 }
 
 #about .experience .experience-text {
-    width: 240px;
-    height: 240px;
+    width: 250px;
+    height: 200px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -391,12 +356,12 @@ body {
 }
 
 #skills .skills-webpublishing {
-    width: 310px;
-    height: 310px;
-    border-radius: 310px;
+    width: 300px;
+    height: 270px;
+    border-radius: 20px;
     background-color: #FFFEF1;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #skills .skills-webpublishing .skills-info {
@@ -406,7 +371,7 @@ body {
     align-items: center;
     margin: 0 auto;
     width: 250px;
-    height: 310px;
+    height: 270px;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
@@ -465,9 +430,9 @@ body {
 /* 스킬- etc */
 
 #skills .etc {
-    width: 310px;
-    height: 310px;
-    border-radius: 310px;
+    width: 300px;
+    height: 270px;
+    border-radius: 30px;
     background-color: #FFFEF1;
     margin: 0 auto;
     margin-bottom: 5px;
@@ -479,7 +444,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 310px;
-    height: 310px;
+    height: 270px;
 }
 
 #skills .etc .etc-icon-text {
@@ -523,18 +488,18 @@ body {
 }
 
 #portfolio-home .portfolio-webpublishing {
-    width: 310px;
-    height: 310px;
-    border-radius: 310px;
+    width: 280px;
+    height: 300px;
+    border-radius: 20px;
     background-color: #FFFEF1;
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 10px;
 }
 #portfolio-home .portfolio-design {
-    width: 310px;
-    height: 310px;
-    border-radius: 310px;
+    width: 280px;
+    height: 300px;
+    border-radius: 20px;
     background-color: #FFFEF1;
     margin: 0 auto;
     
@@ -545,9 +510,9 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 310px;
-    height: 310px;
-    border-radius: 51px;
+    width: 280px;
+    height: 300px;
+    border-radius: 10px;
 }
 
 #portfolio-home .portfolio-webpublishing .portfolio-group {
@@ -561,7 +526,7 @@ body {
 }
 
 #portfolio-home .portfolio-webpublishing .portfolio-group .portfolio-img img {
-    width: 206px;
+    width: 200px;
 }
 
 #portfolio-home .portfolio-design .portfolio-group .portfolio-img img {
@@ -586,9 +551,9 @@ body {
 }
 
 #contact .contact-title {
-    width: 310px;
-    height: 310px;
-    border-radius: 310px;
+    width: 280px;
+    height: 280px;
+    border-radius: 30px;
     background: rgba(255, 213, 213, 0.83);
     display: flex;
     flex-flow: column;
@@ -608,7 +573,7 @@ body {
 
 #contact .contact-title p {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 18px;
     color: #450527;
 }
@@ -627,9 +592,9 @@ body {
 
 #contact .contact-title h2 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
+    text-align: center;
     color: #fff;
-    -webkit-text-stroke: 2px #CC1273;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
